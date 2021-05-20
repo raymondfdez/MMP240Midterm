@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Craigslist</title>
+    <style>
+        
+        
+        
+      #logo {
+            font-family: 'Courgette', cursive;
+            padding: 0px 90px;
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: white;
+            font-size: 60px;
+        }
+
+     #mbtn {
+            display: none;
+        }
+
+          header {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            top: 0px;
+            top: 0px;
+            padding: 0px;
+            background: clear;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+        }
+
+        /* Search */
+                #topnav input[type=text] {
+            display: block;
+            margin-top: 37px;
+            margin-left: 60px;
+            margin-right: -20px;
+            border: none;
+            font-size: 22px;
+            border-radius: 30px;
+        }
+
+     #topnav input[type=text] {
+            display: inline-block;
+            text-align: left;
+            width: 490%;
+            padding: 10px;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+
+        }
+
+      /* Login sign up */
+        nav {
+            position: right;
+            right: 60px;
+            top: 40px;
+         
+        }
+
+       nav ul {
+           
+            list-style: none;
+            padding: 30px;
+           
+        }
+
+        nav li {
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            
+        }
+
+         nav a:hover {
+            color: #fff;
+            background: #797991;
+        }
+
+         nav a {
+            font-family: sans-serif;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 8px 35px;
+            text-decoration: none;
+            width: 80px;
+            border-radius: 40px;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 0%);
+        }
+
+        nav a:hover {
+            color: #fff;
+            background: #797991;
+        }
+
+        /* Container of the buttons */
+        .line container: {
+            position: relative;
+           
+        }
+
+        .row {
+            display: flex;
+            width: 1400px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        /* Container of all the boxes with picture, price and description */
+        .secondcontainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px;
+            height: 100px;
+        }
+
+        /* First line of boxes */
+        .yellowrow {
+        
+            display: flex;
+            justify-content: space-evenly;
+            width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .box {
+            background-color: blue;
+            background: rgba(255,255,255, 0.8);
+            text-align: left;
+            text-decoration: none;
+            width: 450px;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+            border-radius: 15px;
+            margin: 20px
+        }
+
+        .box .price {
+            font-family: sans-serif;
+            letter-spacing: 2px;
+            position: absolute;
+            margin: -42px 0px 0px 100px;
+            text-align: left;
+            width: 20%;
+            font-weight: bold;
+            color: white;
+        }
+
+        .text {
+            font-family: sans-serif;
+            font-size: 18px;
+            line-height: 0.5;
+            padding: 0px 0px 100px 20px;
+            margin: 0px;
+        }
+
+        /* Second line of boxes */
+        .orangerow {
+            display: flex;
+            justify-content: space-evenly;
+            width: 800px;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        /* Buttons */
+        .dropbtn {
+            background-color: white;
+            color: #797991;
+            margin: 30px 10px 0px 30px;
+            width: 200px;
+            text-align: center;
+            font-weight: bold;
+            padding: 16px 30px 16px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+            border-radius: 15px;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content */
+        .dropdown-content {
+            display: none;
+            background-color: #797991;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            text-align: left;
+            margin: auto;
+            width: 148px;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+          /* Links inside the dropdown */
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+         /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: white;
+            color: #797991;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+
+        }
+
+          /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #797991;
+            color: white;
+            box-shadow: none;
+        }
+
+          .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+             color: white;
+            background: rgba(121, 121, 145, 0.5);
+            text-align: center;
+            word-spacing: 90px;
+            font-family:  Helvetica, sans-serif;
+            font-size: 18px;
+            
+        }
+        
+             body {
+  background-image: url('assetts/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+                 
+                 
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo" style="float:left">
+            <h1><a href="index.html">Craigslist</a></h1>
+
+        </div>
+        <div id="topnav" style="float:left">
+            <input type="text" placeholder="Search..">
+        </div>
+
+        <nav style="float:right">
+            <button id="mbtn">&#9776;</button>
+            <ul>
+                <li>
+                    <a href="index.html">LOGIN</a>
+                </li>
+                <li><a href="index.html">POST</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="line container">
+        <div class="row">
+
+
+            <div class="dropdown">
+                <button class="dropbtn">Price</button>
+                <div class="dropdown-content">
+                    <a href="#">$0-$300</a>
+                    <a href="#">$300-$500</a>
+                    <a href="#">$500-$1000</a>
+                    <a href="apartment.html">$1000-$1300</a>
+                    <a href="#">$1300-$1500</a>
+                    <a href="#">$1500-$2000</a>
+                    <a href="#">$2000-$2500</a>
+                    <a href="#">$2500+</a>
+                </div>
+            </div>
+
+            <div class="firstbutton">
+                <button class="dropbtn">Distance</button>
+            </div>
+
+            <div class="firstbutton">
+                <button class="dropbtn">Bedrooms</button>
+            </div>
+
+            <div class="firstbutton">
+                <button class="dropbtn">Basement</button>
+            </div>
+
+            <div class="firstbutton">
+                <button class="dropbtn">Pets</button>
+            </div>
+
+            <div class="firstbutton">
+                <button class="dropbtn">Availability</button>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="secondcontainer">
+        <div class="box">
+            <div class="img">
+                <img src="assetts/1.jpg" alt="bed" style="width:450px;height:300px;">
+               
+            </div>
+            <div class="text">
+                <h4 style="color: #8db3f0"><a href="apartment.html">1 bedroom apartment</a></h4>
+                <b style="color: red" >Manhattan,NY</b>
+                <p>$2,000</p>
+                <br>
+                <p>- No pets</p>
+                <p>- Gas and water included with rent</p>
+                <p>- Access to playground</p>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+              <img src="assetts/2.jpg" alt="bed" style="width:450px;height:300px;">
+               
+            </div>
+            <div class="text">
+                  <h4 style="color: #8db3f0">1 bedroom apartment</h4>
+                <b style="color: red" >Jamaica,NY</b>
+                <p>$1,650</p>
+                <br>
+                <p>- No pets</p>
+                <p>- Gas and water included with rent</p>
+                <p>- Access to playground</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img src="assetts/3.jpg" alt="bed" style="width:450px;height:300px;">
+                <div class="price">
+                 
+                </div>
+            </div>
+            <div class="text">
+                  <h4 style="color: #8db3f0">3 bedroom apartment</h4>
+                <b style="color: red" >Yonkers,NY</b>
+                <p>$1,950 </p>
+                <br>
+                <p>- No pets</p>
+                <p>- Gas and water included with rent</p>
+                <p>- Access to playground</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img src="assetts/4.jpg" alt="bed" style="width:450px;height:300px;">
+                
+            </div>
+            <div class="text">
+                   <h4 style="color: #8db3f0">2 bedroom apartment</h4>
+                <b style="color: red" >Bronx,NY</b>
+                <p>$1,900 </p>
+                <br>
+                <p>- No pets</p>
+                <p>- Gas and water included with rent</p>
+                <p>- Access to playground</p>
+            </div>
+        </div>
+
+
+        <div class="orangerow">
+            <div class="box">
+                <div class="img">
+                    <img src="assetts/5.jpg" alt="bed" style="width:450px;height:300px;">
+                   
+                </div>
+                <div class="text">
+                       <h4 style="color: #8db3f0">1 bedroom apartment</h4>
+                <b style="color: red" >Yonkers,NY</b>
+                <p>$1,950 </p>
+                <br>
+                <p>- No pets</p>
+                <p>- Gas and water included with rent</p>
+                <p>- Access to playground</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="assetts/6.jpg" alt="bed" style="width:450px;height:300px;">
+                    <div class="price">
+                     
+                    </div>
+                </div>
+               <div class="text">
+                       <h4 style="color: #8db3f0">1 bedroom apartment</h4>
+                <b style="color: red" >Yonkers,NY</b>
+                <p>$1,950 </p>
+                <br>
+                <p>- No pets</p>
+                <p>- Gas and water included with rent</p>
+                <p>- Access to playground</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                   <img src="assetts/7.jpg" alt="bed" style="width:450px;height:300px;">
+                  
+                </div>
+                <div class="text">
+                       <h4 style="color: #8db3f0">4 bedroom house</h4>
+                <b style="color: red" >Long Island,NY</b>
+                <p>$2,500</p>
+                <br>
+                <p>- No pets</p>
+                <p>- Gas and water included with rent</p>
+                <p>- Access to playground</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                   <img src="assetts/8.jpg" alt="bed" style="width:450px;height:300px;">
+                    
+                </div>
+              <div class="text">
+                       <h4 style="color: #8db3f0">2 bedroom apartment</h4>
+                <b style="color: red" >Yonkers,NY</b>
+                <p>$2,400 </p>
+                <br>
+                <p>- Pets allowed </p>
+                <p>- Gas and water included with rent</p>
+                <p>- Backyard available</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <p> Help Safety Privacy Feedback Terms </p>
+    </div>
+</body>
+
+</html>

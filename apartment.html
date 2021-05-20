@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Craigslist</title>
+    <style>
+        
+       #logo {
+            font-family: 'Courgette', cursive;
+            padding: 0px 90px;
+                }
+        
+      h1 a {
+            text-decoration: none;
+            color: white;
+            font-size: 60px;
+        }
+        
+        #mbtn {
+            display: none;
+        }
+        
+    header {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            top: 0px;
+            top: 0px;
+            padding: 0px;
+            background: clear;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+        }
+        
+         /* Search */
+                #topnav input[type=text] {
+            display: block;
+            margin-top: 37px;
+            margin-left: 60px;
+            margin-right: -20px;
+            border: none;
+            font-size: 22px;
+            border-radius: 30px;
+        }
+
+         #topnav input[type=text] {
+            display: inline-block;
+            text-align: left;
+            width: 490%;
+            padding: 10px;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+
+        }
+        
+    /* Login sign up */
+        nav {
+            position: right;
+            right: 60px;
+            top: 40px;
+         
+        }
+        
+        nav ul {
+           
+            list-style: none;
+            padding: 30px;
+           
+        }
+        
+         nav li {
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            
+        }
+        
+        nav li:hover ul {
+            display: block;
+        }
+        
+        nav a {
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 7px 30px;
+            text-decoration: none;
+            width: 80px;
+            border-radius: 25px;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+        }
+        
+          nav a:hover {
+            color: #fff;
+            background: #797991;
+        }
+
+        .dropbtn {
+           background-color: white;
+           color: #797991;
+           margin: 30px 20px;
+           width: 148px;
+           font-family: sans-serif;
+           text-align: center;
+           font-weight: bold;
+           padding: 16px 30px 16px 30px;
+           font-size: 16px;
+           border: none;
+           cursor: pointer;
+           box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+           border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        .dropbtn:hover {
+            background-color: #797991;
+            color: white;
+            box-shadow: none;
+            text-decoration: none;
+        }
+
+        .pageposition{
+            text-align: left;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding: 10px 30px 20px 90px;
+            color: #4e3484;
+        }
+        
+        #container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+             width: 1850px;
+                margin: 10px 0px;
+            align-content: center;
+        }
+        
+        .firstbutton {
+            width: 150px;
+            margin: 0px 60px;
+            padding: 0px;
+            
+        }
+        
+        .title {
+            width: 1280px;
+            margin: 0px 40px;
+            padding: 0px 60px;
+            text-align: center;
+        }
+        
+        .purplecontainer {
+            width: 800px;
+            height: 1000px;
+        }
+        
+        .column{
+            float: left;
+            padding: 5px;
+        }
+        
+        .left{
+            position: relative;
+            width: 800px;
+            margin: 5px 10px 10px 130px;
+            font-family: sans-serif;
+        }
+        
+        img {
+            border-radius: 5%;
+        }
+        
+        /* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -102px;
+  padding: 26px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+        
+        h2{
+            margin: 0px;
+        }
+        
+        .middle{
+            background: white;
+            border-radius: 15px;
+            width: 230px;
+            padding: 10px 100px 5px;
+            height: 500px;
+            margin: 15px 0px 0px;
+        }
+        
+        .right{
+            
+            width: 250px;
+            margin: 0px 20px;
+            padding: 0px 150px;
+        }
+        
+        b{
+            margin: 20px 0px;
+            line-height: 200%;
+            font-size: 16px;
+        }
+        
+        .contact{
+            background-color: white;
+           color: #797991;
+           margin: 30px 20px;
+           width: 148px;
+           font-family: sans-serif;
+           text-align: center;
+           font-weight: bold;
+           padding: 16px 30px 16px 30px;
+           font-size: 16px;
+           border: none;
+           cursor: pointer;
+           box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+           border-radius: 10px;
+            text-decoration: none;
+        }
+        
+     .box {
+            background-color: blue;
+            background: rgba(255,255,255, 0.8);
+            text-align: left;
+            text-decoration: none;
+            width: 450px;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+            border-radius: 15px;
+            margin: 20px
+        }
+        
+        .box .price {
+            font-family: sans-serif;
+            letter-spacing: 2px;
+            position: absolute;
+            margin: -42px 0px 0px 100px;
+            text-align: left;
+            width: 20%;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .text {
+            font-family: sans-serif;
+            font-size: 18px;
+            line-height: 0.5;
+            padding: 0px 0px 100px 20px;
+            margin: 0px;
+        }
+        
+       .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+             color: white;
+            background: rgba(121, 121, 145, 0.5);
+            text-align: center;
+            word-spacing: 90px;
+            font-family:  Helvetica, sans-serif;
+            font-size: 18px;
+            
+        }
+        
+        
+             body {
+  background-image: url('assetts/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+        
+      </style>
+</head>
+    
+<body>
+ <header>
+     <div id="logo" style="float:left">
+         <h1><a href="index.html">Craigslist</a></h1>
+         
+     </div>
+    <div id="topnav" style="float:left">
+     <input type="text" placeholder="Search..">
+     </div>
+          
+     <nav style="float:right">
+         <button id="mbtn">&#9776;</button>
+         <ul>
+                <li><a href="index.html">LOGIN</a></li>
+                <li><a href="index.html">POST</a> </li>
+            </ul>
+     </nav>
+     
+    </header>
+    
+<div class="pageposition">
+
+    </div>
+
+        <div id="container">
+                         <div class="firstbutton">
+                <a class="dropbtn" href="housing.html">Previous</a>
+               </div>
+            
+            <div class="title"><h2 style="color: red">1 bedroom apartment</h2>
+            <b style="color: white"; >Manhattan</b>
+            </div>
+
+        <div class="firstbutton">
+            <a class="dropbtn" href="index.html">Next</a>
+                          </div>
+            </div>
+            
+<div id="purplecontainer">
+    <div class="column left">
+    <img src="assetts/1.jpg" alt="bed" style="width:100%">
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+    
+    </div>
+<div class="column middle">
+    <h1 style="color: red"> $2,000</h1>
+    <h3  style="color: RED"; >Includes:</h3>
+    <b style="color: black;font-size: 20px;">- Security Cameras <br>- Elevator <br> - Central air <br> - Gym <br> - Hot water  <br> - Fireplace <br>- Storage<br> - Concierge<br> - Garden <br></b>
+ <button class="contact" style="float:left">Contact</button>
+    </div>
+    <div class="column right">
+        <h2 style="color: red">Location</h2>
+        <b style="color: white;font-size: 16px;">62 W 109th St, New York, NY 10025</b>
+       
+    
+        <div class="box">
+            <div class="img">
+        <img src="assetts/2.jpg" alt="bed" style="width:350px;height:250px;">
+             
+                <div class="price"><p>NEXT</p>
+                    </div>
+             </div>
+        
+            </div>
+        
+    </div>
+    </div>
+
+    
+    <div class="footer">
+  <p>About Help Scams Safety Terms Privacy System</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Craigslist</title>
+    
+    <style>
+        
+      
+        
+            
+        
+        #logo {
+            font-family: 'Courgette', cursive;
+            padding: 0px 90px;
+           
+        }
+        
+
+        h1 a {
+            text-decoration: none;
+            color: white;
+            font-size: 60px;
+        }
+
+        #mbtn {
+            display: none;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            top: 0px;
+            padding: 0px;
+            background: clear;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+        }
+
+        /* Search */
+        #topnav input[type=text] {
+            display: block;
+            margin-top: 37px;
+            margin-left: 60px;
+            margin-right: -20px;
+            border: none;
+            font-size: 22px;
+            border-radius: 30px;
+        }
+
+        #topnav input[type=text] {
+            display: inline-block;
+            text-align: left;
+            width: 490%;
+            padding: 10px;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+
+        }
+
+        /* Login */
+        nav {
+            position: right;
+            right: 60px;
+            top: 40px;
+         
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 30px;
+        }
+
+        nav li {
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        nav li:hover ul {
+            display: block;
+        }
+
+        nav a {
+            font-family: sans-serif;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 8px 35px;
+            text-decoration: none;
+            width: 80px;
+            border-radius: 40px;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+        }
+
+        nav a:hover {
+            color: #fff;
+            background: #797991;
+        }
+
+        /* middle container */
+        .line container: {
+            position: center;
+            
+        }
+
+        /* First row of buttons */
+        .row {
+            display: flex;
+            width: 1100px;
+            margin: 250px auto;
+            text-align: center ;
+        }
+
+        .dropbtn {
+            background-color: white;
+            color: #797991;
+            margin: 25px 100px 25px 20px;
+            width: 190px;
+            text-align: center;
+            font-weight: bold;
+            padding: 20px 30px 20px 30px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 30%);
+            border-radius: 15px;
+        }
+
+    
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content */
+        .dropdown-content {
+            display: none;
+            background-color: #797991;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            text-align: left;
+            margin: auto;
+            width: 148px;
+            box-shadow: 0em 1em 1em 0em rgb(0 0 0 / 20%);
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: white;
+            color: #797991;
+        } 
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #797991;
+            color: white;
+            box-shadow: none;
+        }
+
+        
+
+        .moreinfo {
+            position: relative;
+            color: white;
+            font-size: 18px;
+            word-spacing: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 300px 0px 0px 0px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+             color: white;
+            background: rgba(121, 121, 145, 0.4);
+            text-align: center;
+            word-spacing: 90px;
+            font-family:  Helvetica, sans-serif;
+            font-size: 18px;
+            
+        }
+
+        body {
+  background-image: url('assetts/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+    </style>
+    
+    
+    
+    
+</head>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    
+
+<body>
+ 
+    
+   
+    
+    <header>
+        <div id="logo" style="float:left">
+            <h1><a href="index.html">Craigslist</a></h1>
+
+        </div>
+        <div id="topnav" style="float:left">
+            <input type="text" placeholder="Search..">
+        </div>
+
+        <nav style="float:right">
+            <button id="mbtn">&#9776;</button>
+            <ul>
+                <li><a href="index.html">LOGIN</a></li>
+                <li><a href="index.html">SIGN UP</a></li>
+                
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="line container">
+        <div class="row">
+            <div class="firstbutton">
+                <button class="dropbtn">Community</button>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Housing</button>
+                <div class="dropdown-content">
+                    <a href="housing.html">Apts/Housing</a>
+                    <a href="#">Housing swap</a>
+                    <a href="#">Housing wanted</a>
+                    <a href="#">Office rentals</a>
+                    <a href="#">Parking/Storage</a>
+                    <a href="#">Real estate</a>
+                    <a href="#">Rooms/Shared</a>
+                    <a href="#">Rooms wanted</a>
+                    <a href="#">Sublets rentals</a>
+                    <a href="#">Vacation rentals</a>
+                </div>
+            </div>
+
+            <div class="firstbutton">
+                <button class="dropbtn">Jobs</button>
+            </div>
+
+            <div class="firstbutton">
+                <button class="dropbtn">Services</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="line container">
+        <div class="row">
+            <div class="firstbutton">
+                <button class="dropbtn">For Sale</button>
+            </div>
+            <div class="firstbutton">
+                <button class="dropbtn"> Forums </button>
+            </div>
+            <div class="firstbutton">
+                <button class="dropbtn">Gigs</button>
+            </div>
+            <div class="firstbutton">
+                <button class="dropbtn">Resumes</button>
+            </div>
+        </div>
+    </div>
+
+       
+    
+
+    <div class="footer">
+        <p> Help Safety Privacy Feedback Terms </p>
+    </div>
+</body>
+
+</html>
